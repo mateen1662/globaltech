@@ -1,0 +1,45 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+
+}
+.box{
+    width: 600px;
+    height: 500px;
+    background-color: red;
+    position: relative;
+}
+.box::before{
+    content: " ";
+    width: 600px;
+    height: 500px;
+    background-color: blue;
+    position: absolute;
+    z-index: -1;
+    transition: 1s;
+}
+.box::after{
+    content: " ";
+    width: 600px;
+    height: 500px;
+    background-color: gold;
+    position: absolute;
+    z-index: -1;
+    transition: 1s;
+}
+.box:hover::after{
+    transform: rotateZ(10deg);
+    transition: 1s;
+}
+.box:hover::before{
+    transform: rotateZ(20deg);
+    transition: 1s;
+}

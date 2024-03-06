@@ -1,0 +1,68 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+nav{
+    width: 100%;
+    height: 15vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 115px;
+    height: 100px;
+    margin-right:auto
+}
+.active{
+    color: black;
+    background-color:rgb(236, 210, 107);
+    transition: 0.5s;
+    border-radius: 10px;
+    transform: scale(1.2);
+}
+li{
+    display: inline;
+    margin-right: 10px;
+}
+ul{
+    margin-right: 20px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+}
+button:hover{
+    color: black;
+    background-color:rgb(236, 210, 107);
+    transition: 0.5s;
+    border-radius: 10px;
+    transform: scale(1.2);
+}
+button{
+    width: 100px;
+    height: 50px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    transition: 0.5s;
+
+}
+.main{
+    width: 100%;
+    height: 85vh;
+    background-image: url("https://d3a7681eac84b80013b3-ed6116cb8932f89e9d6a5990862ad2c7.ssl.cf1.rackcdn.com/2019_10_03_Mah-Ze-Dahr_Shot09_0778_R1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    color: white;
+    text-shadow: 4px 4px gray;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    top: 265px;
+    font-size: 120px;
+    text-align: center;
+}

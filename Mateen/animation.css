@@ -1,0 +1,493 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+}
+body
+{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button
+{
+    width: 100px;
+    height: 50px;
+    border: none;
+    font-size: large;
+}
+.b1
+{
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    border: 1px solid black;
+    transition: 1s;
+}
+.b1::after
+{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background-color: orange;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index:-1;
+    transform: translateY(-60px);
+    transition: 1s;
+}
+.b1:hover::after
+{
+    transform: translateY(0px);
+}
+.b1:hover
+{
+    color: white;
+}
+.b2
+{
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    border: 1px solid black;
+    transition: 1s;
+}
+.b2::after
+{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background-color: orange;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index:-1;
+    transform: translateY(60px);
+    transition: 1s;
+}
+.b2:hover::after
+{
+    transform: translateY(0px);
+}
+.b2:hover
+{
+    color: white;
+}
+.b3
+{
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    border: 1px solid black;
+    transition: 1s;
+    font-size:x-small;
+}
+.b3::after
+{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background-color: orange;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index:-1;
+    transform: translateX(-120px);
+    transition: 1s;
+}
+.b3:hover::after
+{
+    transform: translateX(0px);
+}
+.b3:hover
+{
+    color: white;
+    font-size: large;
+}
+.b4
+{
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    border: 1px solid black;
+    transition: 1s;
+}
+.b4::after
+{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background-color: orange;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index:-1;
+    transform: translateX(120px);
+    transition: 1s;
+}
+.b4:hover::after
+{
+    transform: translateX(0px);
+}
+.b4:hover
+{
+    color: white;
+}
+
+.b5
+{
+    overflow: hidden;
+    position: relative;
+    background-color: transparent;
+    border: 1px solid black;
+    transition: 1s;
+}
+
+.b5::after
+{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background-color:orange;
+    position: absolute;
+    top: 0;
+    left: -100px;
+    z-index:-1;
+    transition: 1s;
+}
+.b5::before
+{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background-color: orange;
+    position: absolute;
+    top: 0;
+    right: -100px;
+    z-index: -1;
+    transition: 1s;
+}
+.b5:hover::after
+{
+    left: -49px;
+}
+.b5:hover::before
+{
+    right: -49px;
+}
+
+.b6
+{
+    overflow: hidden;
+    position: relative;
+    background-color: transparent;
+    border: 1px solid black;
+    transition: 1s;
+}
+
+.b6::after
+{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background-color:orange;
+    position: absolute;
+    top: -50px;
+    left:0;
+    z-index:-1;
+    transition: 1s;
+}
+.b6::before
+{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background-color: orange;
+    position: absolute;
+    bottom: -50px;
+    right: 0px;
+    z-index: -1;
+    transition: 1s;
+}
+.b6:hover::after
+{
+    top: -24px;
+}
+.b6:hover::before
+{
+    bottom: -24px;
+}
+
+
+.b7
+{
+    position: relative;
+    background-color: orange;
+    transition: 1s;
+}
+
+.b7::after
+{
+    content: " ";
+    width: 0%;
+    height: 99%;
+    background-color: transparent;
+    position: absolute;
+    top:0px;
+    left: 0;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    transition: 1S;
+}
+.b7:hover::after
+{
+    width: 100%;
+}
+
+.b8
+{
+    position: relative;
+    background-color: orange;
+    transition: 1s;
+}
+
+.b8::after
+{
+    content: " ";
+    width: 99%;
+    height: 0%;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    transition: 1S;
+}
+.b8:hover::after
+{
+    height: 100%;
+}
+
+
+.b9
+{
+    overflow: hidden;
+    position: relative;
+    background-color: orange;
+    border:none;
+    transition: 1s;
+}
+.b9::after
+{
+    content: " ";
+    width: 98%;
+    height: 100%;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    transform: translateY(60px);
+    transition: 1s;
+}
+.b9:hover::after
+{
+    transform: translateY(0px);
+}
+.b9:hover
+{
+    color: white;
+}
+
+.b10
+{
+    overflow: hidden;
+    position: relative;
+    background-color: orange;
+    border:none;
+    transition: 1s;
+}
+.b10::after
+{
+    content: " ";
+    width: 100%;
+    height: 97%;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    transform: translateX(120px);
+    transition: 1s;
+}
+.b10:hover::after
+{
+    transform: translateX(0px);
+}
+.b10:hover
+{
+    color: white;
+}
+
+.b11
+{
+    position: relative;
+    background-color: orange;
+    border:none;
+    transition: 1s;
+}
+.b11::after
+{
+    content: " ";
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    transition: 1s;
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+
+}
+.b11:hover::after
+{
+    width: 100%;
+    height: 100%;
+}
+.b11::before
+{
+    content: " ";
+    width: 10px;
+    height: 10px;
+    background-color:transparent;
+    position: absolute;
+    bottom: -1px;
+    right: -1px;
+    transition: 1s;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.b11:hover::before
+{
+    width: 100%;
+    height: 100%;
+}
+
+.b12
+{
+    overflow: hidden;
+    position: relative;
+    background-color: transparent;
+    border:none;
+    transition: 1s;
+    border: 1px solid black;
+}
+.b12::after
+{
+    content: " ";
+    width: 1px;
+    height: 1px;
+    background-color: orange;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transition: 1s;
+    z-index: -1;
+    border-radius: 99%;
+
+}
+.b12:hover::after
+{
+    width: 100%;
+    height: 100%;
+    transform: scale(1.5);
+    top: 0;
+    left: 0;
+}
+
+.b13{
+    overflow: hidden;
+    position: relative;
+    background-color: transparent;
+    border: 1px solid black;
+}
+.b13::before{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background-color: orange;
+    position:absolute;
+    top: -50px;
+    left: -49px;
+    z-index: -1;
+    transition: 1s;
+}
+.b13::after{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background-color: orange;
+    position: absolute;
+    bottom: -50px;
+    right: -49px;
+    z-index: -1;
+    transition: 1s  ;
+}
+.b13:hover::before{
+    top: 0px;
+}
+.b13:hover::after{
+    bottom: 0px;
+}
+
+.b14{
+    overflow: hidden;
+    position: relative;
+    background-color: transparent;
+    border: 1px solid black;
+}
+.b14::before{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background-color: orange;
+    z-index: -1;
+    position: absolute;
+    top: 23px;
+    left: 100px;
+    transition: 1s;
+}
+.b14::after{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background-color: orange;
+    z-index: -1;
+    position: absolute;
+    bottom: 23px;
+    right: 100px;
+    transition: 1s;
+}
+.b14:hover::before{
+    left: 0;
+}
+.b14:hover::after{
+    right: 0;
+}
+
+.b15{
+    position: relative;
+    background-color: orange;
+    transition: 1s;
+}
+.b15::after{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background-color:transparent;
+}
